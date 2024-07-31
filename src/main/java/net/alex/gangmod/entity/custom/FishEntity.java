@@ -11,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class FishEntity extends Animal {
     public FishEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+        //comment here
     }
 
     @Override
