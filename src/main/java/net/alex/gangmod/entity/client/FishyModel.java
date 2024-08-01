@@ -13,16 +13,16 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
-import javax.swing.text.html.parser.Entity;
+import net.minecraft.world.entity.Entity;
 
-public class FishyModel<T extends Entity> extends HierarchicalModel {
+public class FishyModel<T extends Entity> extends HierarchicalModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "custommodel"), "main");
-	private final ModelPart fishy;
-	private final ModelPart face;
-	private final ModelPart top;
-	private final ModelPart mainbody;
-	private final ModelPart fins;
+//	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "custommodel"), "main");
+	public final ModelPart fishy;
+	public final ModelPart face;
+	public final ModelPart top;
+	public final ModelPart mainbody;
+	public final ModelPart fins;
 
 	public FishyModel(ModelPart root) {
 		this.fishy = root.getChild("fishy");
