@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 public class FishyRenderer extends MobRenderer<FishyEntity, FishyModel<FishyEntity>> {
 
     public FishyRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new FishyModel<FishyEntity>(pContext.bakeLayer(ModModelLayers.FISHY_LAYER)), 2f);
+        super(pContext, new FishyModel<FishyEntity>(pContext.bakeLayer(ModModelLayers.FISHY_LAYER)), 0);
     }
 
     @Override
