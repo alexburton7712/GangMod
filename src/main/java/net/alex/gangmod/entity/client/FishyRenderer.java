@@ -17,7 +17,7 @@ public class FishyRenderer extends MobRenderer<FishyEntity, FishyModel<FishyEnti
 
     @Override
     public ResourceLocation getTextureLocation(FishyEntity fishyEntity) {
-        return new ResourceLocation(GangMod.MOD_ID, "textures/entity/fishy.png");
+        return new ResourceLocation(GangMod.MOD_ID, "textures/entity/fishy_texture.png");
     }
 
     @Override

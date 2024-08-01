@@ -68,7 +68,7 @@ public class FishyModel<T extends Entity> extends HierarchicalModel<T> {
 
 
 	@Override
-	public void setupAnim(net.minecraft.world.entity.Entity pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 
 	}
 }
