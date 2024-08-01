@@ -26,10 +26,10 @@ public class FishyModel<T extends Entity> extends HierarchicalModel<T> {
 
 	public FishyModel(ModelPart root) {
 		this.fishy = root.getChild("fishy");
-		this.face = root.getChild("face");
-		this.top = root.getChild("top");
-		this.mainbody = root.getChild("mainbody");
-		this.fins = root.getChild("fins");
+		this.face = fishy.getChild("face");
+		this.top = fishy.getChild("top");
+		this.mainbody = fishy.getChild("mainbody");
+		this.fins = fishy.getChild("fins");
 	}
 
 	public static LayerDefinition createBodyLayer() {
